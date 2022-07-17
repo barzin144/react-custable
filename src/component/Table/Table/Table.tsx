@@ -138,10 +138,8 @@ const reducer = <T extends Row>(
       let headIndeterminate = false;
       let headChecked = false;
       let rowSelectedCount = state.rowSelectedCount;
-      let selectedRowIds = state.selectedRowIds;
-
+      let selectedRowIds = [...state.selectedRowIds];
       const rowId = action.payload.id;
-
       //if the row was selected then increase selected rows count otherwise decrease selected rows count
       if (selectedRowIds.indexOf(rowId) === -1) {
         rowSelectedCount++;
@@ -369,11 +367,11 @@ export const Table = <T extends Row>({
   return (
     <div className="customTable">
       {isLoading && (
-        <div className="loading-container">
-          <div id="custom-spinner" />
+        <div className="overlay">
+          <div className="spinner-border" />
         </div>
       )}
-      <div ref={tableContainerRef} className={`tableContainer ${isLoading ? 'opacityHalf' : ''}`}>
+      <div ref={tableContainerRef} className="tableContainer">
         <table className="table">
           <thead>
             <tr className="tableRowHeader">

@@ -1,6 +1,6 @@
 {
   "name": "react-custable",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A custom table for react",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",

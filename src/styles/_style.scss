@@ -16,9 +16,18 @@
 }
 
 .spinner-border {
-  display: inline-block;
-  vertical-align: middle;
+  position: absolute;
+  left: -webkit-calc(50% - 50px);
+  left: -moz-calc(50% - 50px);
+  left: calc(50% - 50px);
+  top: -webkit-calc(50% - 50px);
+  top: -moz-calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: rem(50px);
+  height: rem(50px);
+  border: 2px solid $primary-1;
   border-right-color: transparent !important;
   border-radius: 50%;
+  z-index: 1000;
   animation: 0.75s linear infinite spinner-border;
 }
