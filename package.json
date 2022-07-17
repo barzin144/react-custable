@@ -11,7 +11,8 @@
     "rollup": "rm -rf dist && rollup -c"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/barzin144/react-custable.git"
   },
   "files": [
     "dist"
