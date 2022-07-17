@@ -79,7 +79,7 @@
     .tableRowHeader {
       font-size: $smFontSize;
       font-weight: bold;
-      color: $dark-blue-2;
+      color: $dark-blue;
       height: rem(34px);
 
       .column {
@@ -91,7 +91,7 @@
         padding: rem(8px);
         vertical-align: middle;
         font-size: $smFontSize;
-        background-color: $white-4;
+        background-color: $white-3;
         span {
           white-space: nowrap;
           text-overflow: ellipsis;
@@ -117,13 +117,13 @@
     }
     .tableRow {
       font-size: $smFontSize;
-      color: $dark-blue-2;
+      color: $dark-blue;
       margin-bottom: rem(8px);
       &.clickable {
         cursor: pointer;
         &:hover {
           td {
-            background-color: $white-9;
+            background-color: $white-4;
           }
         }
       }

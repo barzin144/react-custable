@@ -359,7 +359,6 @@ export const Table = <T extends Row>({
 
   const paginationPageChangeHandler = (pageNumber: number) => {
     if (pageNumber !== pagination.currentPage) {
-      dispatch({ type: 'SET_ISLOADING', payload: { isLoading: true } });
       pageChangeHandler(pageNumber);
     }
   };

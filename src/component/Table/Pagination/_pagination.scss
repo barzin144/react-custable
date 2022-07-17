@@ -36,15 +36,15 @@
         outline: 0;
       }
       &:hover {
-        background-color: $blue-4;
-        color: $primary-1;
+        background-color: $blue;
+        color: $primary;
       }
 
       &--currentPage {
-        background-color: $primary-1;
+        background-color: $primary;
         color: $white-1;
         &:hover {
-          background-color: $primary-1;
+          background-color: $primary;
           color: $white-1;
         }
       }
@@ -55,9 +55,9 @@
       cursor: pointer;
 
       &:hover {
-        background-color: $blue-4;
+        background-color: $blue;
         path {
-          fill: $primary-1;
+          fill: $primary;
         }
       }
 

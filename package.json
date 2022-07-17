@@ -1,6 +1,6 @@
 {
   "name": "react-custable",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A custom table for react",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -18,6 +18,15 @@
     "dist"
   ],
   "author": "Barzin Assa",
+  "keywords": [
+    "React-CusTable",
+    "React",
+    "Table",
+    "Custom Table",
+    "Component",
+    "React Component",
+    "UI"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@svgr/webpack": "^6.2.1",
