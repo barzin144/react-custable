@@ -1,0 +1,25 @@
+.tableCheckbox {
+  position: relative;
+  width: rem(24px);
+  height: rem(24px);
+  margin: 0 auto;
+  &:hover {
+    .outlined {
+      path {
+        stroke: $primary-1;
+      }
+    }
+  }
+  .checkbox {
+    top: 0;
+    left: 0;
+    width: rem(24px);
+    cursor: pointer;
+    height: rem(24px);
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+  }
+}

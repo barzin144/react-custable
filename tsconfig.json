@@ -1,0 +1,16 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules", "src/**/*.test.tsx", "src/**/*.stories.tsx", "build", "webpack"],
+  "compilerOptions": {
+    "allowJs": false,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "target": "es5",
+    "module": "ESNext",
+    "lib": ["DOM.Iterable", "ESNext", "DOM"],
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "esModuleInterop": true
+  }
+}

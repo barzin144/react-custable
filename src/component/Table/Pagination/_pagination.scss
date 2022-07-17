@@ -1,0 +1,78 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(12px) 0 rem(12px) rem(12px);
+  .info {
+    color: $grey-2;
+    font-size: $smFontSize;
+  }
+  .pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    & > * {
+      margin: 0 rem(4px);
+    }
+    .page {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: $mdFontSize;
+      line-height: 1;
+      color: $grey-2;
+      width: rem(24px);
+      height: rem(24px);
+      border-radius: 4px;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+      &:focus,
+      &:focus-visible,
+      &:focus-within {
+        outline: 0;
+      }
+      &:hover {
+        background-color: $blue-4;
+        color: $primary-1;
+      }
+
+      &--currentPage {
+        background-color: $primary-1;
+        color: $white-1;
+        &:hover {
+          background-color: $primary-1;
+          color: $white-1;
+        }
+      }
+    }
+    .arrow {
+      padding: rem(4px);
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $blue-4;
+        path {
+          fill: $primary-1;
+        }
+      }
+
+      &--disabled {
+        cursor: not-allowed;
+        &:hover {
+          background-color: transparent;
+          path {
+            fill: $grey-1;
+          }
+        }
+        path {
+          fill: $grey-1;
+        }
+      }
+    }
+  }
+}

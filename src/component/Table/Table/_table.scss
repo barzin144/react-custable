@@ -1,0 +1,147 @@
+@import './Checkbox/tableCheckbox';
+
+.customTable {
+  position: relative;
+  .tableContainer {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    table {
+      display: table;
+      table-layout: fixed;
+      border-spacing: 0 0.5rem;
+      border-collapse: collapse;
+      margin-bottom: 0;
+      padding: rem(5px);
+      width: 100%;
+      .fixed {
+        &.column {
+          overflow: visible !important;
+        }
+      }
+      .fixed-right {
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: -1px;
+          left: 0;
+          width: 30px;
+          transform: translate(-100%);
+          transition: box-shadow 0.3s;
+          content: '';
+          pointer-events: none;
+        }
+        position: sticky;
+        right: 0;
+        &::after {
+          box-shadow: inset -10px 0 8px -8px #00000026;
+        }
+        &.no-shadow {
+          &::after {
+            box-shadow: none;
+          }
+        }
+      }
+      .fixed-left {
+        &::after {
+          position: absolute;
+          top: 0;
+          bottom: -1px;
+          right: 0;
+          width: 30px;
+          transform: translate(100%);
+          transition: box-shadow 0.3s;
+          content: '';
+          pointer-events: none;
+        }
+        position: sticky;
+        left: 0;
+        &::after {
+          box-shadow: inset 10px 0 8px -8px #00000026;
+        }
+        &.no-shadow {
+          &::after {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    .tableRowHeader {
+      font-size: $smFontSize;
+      font-weight: bold;
+      color: $dark-blue-2;
+      height: rem(34px);
+
+      .column {
+        padding-right: rem(16px);
+        text-align: inherit;
+      }
+      th {
+        border: 1px solid $white-2;
+        padding: rem(8px);
+        vertical-align: middle;
+        font-size: $smFontSize;
+        background-color: $white-4;
+        span {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: block;
+          line-height: 1;
+        }
+
+        .headerContainer {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          .rotate {
+            transform-box: fill-box;
+            transform-origin: center;
+            transform: rotate(180deg);
+          }
+          svg {
+            height: rem(16px);
+          }
+        }
+      }
+    }
+    .tableRow {
+      font-size: $smFontSize;
+      color: $dark-blue-2;
+      margin-bottom: rem(8px);
+      &.clickable {
+        cursor: pointer;
+        &:hover {
+          td {
+            background-color: $white-9;
+          }
+        }
+      }
+      .noData {
+        text-align: center;
+        svg {
+          margin: rem(16px) 0;
+        }
+        span {
+          display: block;
+          font-size: $smFontSize;
+          color: $grey-5;
+        }
+      }
+      > td {
+        border: 1px solid $white-2;
+        padding: rem(15px) rem(8px);
+        vertical-align: middle;
+        font-size: $smFontSize;
+        background-color: white;
+        transition: background-color 100ms ease-in-out;
+      }
+      .column {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
