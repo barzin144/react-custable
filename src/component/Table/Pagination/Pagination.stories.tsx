@@ -4,7 +4,7 @@ import { useArgs } from '@storybook/client-api';
 import { Pagination } from './Pagination';
 
 export default {
-  title: 'Components/Table',
+  title: 'Components',
   component: Pagination,
 } as ComponentMeta<typeof Pagination>;
 

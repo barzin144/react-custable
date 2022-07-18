@@ -4,7 +4,7 @@ import { useArgs } from '@storybook/client-api';
 import { Table as TableComponent, TableProps } from './Table';
 
 export default {
-  title: 'Components/Table',
+  title: 'Components',
   component: TableComponent,
 } as ComponentMeta<typeof TableComponent>;
 

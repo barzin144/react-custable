@@ -13,7 +13,7 @@
 ## Run component in storybook
 
 First clone the source then run
-or visit storybook online [Here](https://barzin144.github.io/react-custable).
+or visit storybook online [Here](https://barzin144.github.io/react-custable/?path=/story/components--table).
 
 ```bash
 npm start
