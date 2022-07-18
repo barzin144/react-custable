@@ -13,6 +13,7 @@
 ## Run component in storybook
 
 First clone the source then run
+or visit storybook online [Here](https://barzin144.github.io/react-custable).
 
 ```bash
 npm start
