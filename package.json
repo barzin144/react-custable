@@ -8,7 +8,8 @@
     "start": "start-storybook -p 6006",
     "test": "jest --silent",
     "test:watch": "jest --silent --watch",
-    "rollup": "rm -rf dist && rollup -c"
+    "rollup": "rm -rf dist && rollup -c",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
